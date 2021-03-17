@@ -258,3 +258,5 @@ cdef extern from "cpl_string.h":
 cdef extern from "cpl_conv.h":
     void *  CPLMalloc (size_t)
     void    CPLFree (void *ptr)
+    #### adding gdal.SetConfigOption
+    void CPLSetConfigOption(const char* key, const char* val)
