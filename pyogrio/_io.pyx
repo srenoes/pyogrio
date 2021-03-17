@@ -1050,3 +1050,6 @@ def ogr_write(str path, str layer, str driver, geometry, field_data, fields,
     ### Final cleanup
     if ogr_dataset != NULL:
         GDALClose(ogr_dataset)
+
+def gdal_SetConfigOption(const char* key, const char* val):
+    CPLSetConfigOption(key, val)
